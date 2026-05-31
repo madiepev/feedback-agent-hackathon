@@ -2,4 +2,4 @@
 
 Group instruction files will be created here during the hackathon.
 
-Each team creates their own file named: `groupX-feedback-agent.md`
+Each group creates their own file named: `group1-feedback-agent.md`, `group2-feedback-agent.md`, etc.

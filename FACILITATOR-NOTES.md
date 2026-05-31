@@ -8,70 +8,94 @@
 
 ## Pre-Event Setup
 
-### Mentimeter Preparation
+### GitHub Discussions Preparation
 
-Create a Mentimeter presentation with the following slides:
+Create two GitHub Discussions in your repository before the event:
 
-**Slide 1: Summary Submission (Open Text)**
-- Question: "Write a 50-100 word summary of the Mars article's main scientific findings"
-- Settings: Open text field, 100 word limit
-- Allow multiple submissions if time permits
+**Discussion 1: Share Your Summary**
+- **Title:** Phase 1: Share Your Mars Summary
+- **Category:** General
+- **Body:**
+```markdown
+Welcome! Before building feedback agents, let's create test data together.
 
-**Slide 2: Vote for Best Summary**
-- Question: "Which summary is strongest?"
-- Type: Multiple choice (populate with anonymized submissions from Slide 1)
-- Settings: One vote per participant
+## Your Task
+1. Read [assets/article.md](../blob/main/assets/article.md)
+2. Write a 50-100 word summary of the main scientific findings
+3. Post your summary as a **comment below**
+4. Read others' summaries and react with 👍 to your favorite
 
-**Slide 3: What Made It Good? (Word Cloud)**
-- Question: "Why did you vote for that summary? What made it good?"
-- Type: Word cloud
-- Settings: Allow 1-2 submissions per person
+## Rules
+- One summary per person
+- 50-100 words only
+- Focus on the science (not background/context)
+- Post by [TIME] — we'll count votes together!
+```
 
-**Slide 4: How to Improve? (Word Cloud)**
-- Question: "What could other summaries improve to be better?"
-- Type: Word cloud
-- Settings: Allow 1-2 submissions per person
+**Discussion 2: Evaluate the Example Summary**
+- **Title:** Phase 1: Evaluate the Example Summary Using the Rubric
+- **Category:** Polls
+- **Body:**
+```markdown
+Now that you've learned the Universal Science Writing Rubric, let's practice!
+
+Read this example summary (from [assets/example-summary.md](../blob/main/assets/example-summary.md)):
+
+> NASA's Perseverance rover discovered the "Bright Angel" rock formation in Jezero Crater, revealing diverse redox chemistry through Raman and fluorescence spectroscopy. Multiple minerals indicate dynamic wet-dry cycles during Mars' early history. Organic matter detection suggests complex prebiotic chemistry, though biological origin remains unconfirmed. These findings constrain models of Mars' ancient climate and aqueous geochemistry, with implications for understanding planetary habitability beyond Earth.
+
+**Vote on each dimension below (1=Absent, 2=Developing, 3=Proficient, 4=Mastery):**
+```
+
+- **Poll 1:** Dimension A - Content Accuracy (Options: 1-Absent, 2-Developing, 3-Proficient, 4-Mastery)
+- **Poll 2:** Dimension B - Interpretation (Options: 1-Absent, 2-Developing, 3-Proficient, 4-Mastery)
+- **Poll 3:** Dimension C - Audience Targeting (Options: 1-Absent, 2-Developing, 3-Proficient, 4-Mastery)
+- **Poll 4:** Dimension D - Organization (Options: 1-Absent, 2-Developing, 3-Proficient, 4-Mastery)
+- **Poll 5:** Dimension E - Writing Quality (Options: 1-Absent, 2-Developing, 3-Proficient, 4-Mastery)
 
 ### Materials Checklist
-- [ ] Mentimeter link ready to share
-- [ ] Projector/screen for displaying Mentimeter responses
-- [ ] All participants have forked the repository
+- [ ] Discussion 1 (Share Your Summary) created and pinned
+- [ ] Discussion 2 (Evaluate Example) created with 5 polls
+- [ ] Projector/screen for displaying discussion responses live
 - [ ] GitHub Copilot access verified for all participants
 - [ ] Team assignments prepared (3-4 people per team)
 - [ ] Cross-testing assignments ready (which team tests which)
 
 ---
 
-## Phase 1: Orientation & Elicitation (~40 min)
+## Phase 1: Orientation & Elicitation (~50 min)
 
 ### Timeline:
-- **0:00-0:05** — Welcome & introduce the Mars article
-- **0:05-0:15** — Silent reading & writing (Mentimeter Slide 1)
-- **0:15-0:17** — Vote for best summary (Mentimeter Slide 2)
-- **0:17-0:22** — Discuss what made it good (Slide 3 word cloud)
-- **0:22-0:27** — Discuss improvements (Slide 4 word cloud)
-- **0:27-0:35** — Introduce the Universal Science Writing Rubric
-- **0:35-0:40** — Evaluate example summary using rubric
+- **0:00-0:05** — Welcome & introduce GitHub Discussions workflow
+- **0:05-0:15** — Silent reading & writing summaries
+- **0:15-0:20** — Post summaries to Discussion, read peers' work, upvote favorites
+- **0:20-0:25** — Identify most popular summaries and discuss what made them good
+- **0:25-0:30** — Discuss how to improve weaker summaries
+- **0:30-0:38** — Introduce the Universal Science Writing Rubric
+- **0:38-0:43** — Vote on example summary using Discussion polls
+- **0:43-0:53** — FeedbackFruits presentation
+- **0:53-0:55** — Fork repository
 
 ### Facilitator Script:
 
 **Introduction (5 min):**
-> "Before we build AI feedback agents, let's experience the task ourselves. You'll find an article about Mars geology in assets/article.md. Read it, then write a 50-100 word summary in Mentimeter."
+> "Before we build AI feedback agents, let's experience the task ourselves. Navigate to the Discussions tab—I've pinned 'Phase 1: Share Your Summary' at the top. Read the Mars article (assets/article.md), then write a 50-100 word summary and post it as a comment. You have 10 minutes."
 
-**After submissions (2 min):**
-> "Here are all our summaries, anonymized. Vote for the one you think is strongest. Trust your instincts—we'll analyze why later."
+**After posting period (5 min):**
+> "Now refresh the discussion. Read your peers' summaries. React with 👍 to the one you think is strongest. Trust your instincts—we'll analyze why later."
+>
+> [Give 2-3 minutes for voting, then refresh and sort by reactions]
 
 **Quality discussion (5 min):**
-> "Most of you voted for [winning summary]. What made it good? Submit 1-2 characteristics."
+> "Let's look at the top-voted summaries. [Read top 2-3 aloud]. What made these good? Call out specific features."
 > 
-> [Display word cloud]
+> [Collect responses verbally, write themes on board/screen: accuracy, clarity, completeness, evidence, etc.]
 > 
-> "Notice these themes: [point out patterns—accuracy, clarity, completeness, etc.]. You're already experts at recognizing quality!"
+> "Notice these patterns—you're already experts at recognizing quality!"
 
 **Improvement discussion (5 min):**
-> "Now flip it: what could other summaries improve? What's missing or unclear?"
+> "Now look at summaries with fewer votes. What could they improve? What's missing or unclear?"
 >
-> [Display word cloud]
+> [Collect responses, highlight themes: vague language, missing evidence, too much background, etc.]
 >
 > "Great—you've just done what feedback agents need to do: identify quality AND explain how to improve."
 
@@ -83,7 +107,19 @@ Create a Mentimeter presentation with the following slides:
 > "This rubric is your agent's foundation. Your job is to decide HOW it should use these criteria to help students."
 
 **Example evaluation (5 min):**
-> "Open assets/example-summary.md. Use the peer-rating worksheet to score it on each dimension. How does using the rubric compare to your gut instinct?"
+> "Navigate to the second pinned discussion: 'Evaluate the Example Summary'. You'll see an example summary and 5 polls—one per rubric dimension. Vote on each dimension. How does using the rubric compare to your gut instinct?"
+>
+> [Allow 3-4 minutes for voting]
+>
+> "Let's see the results. [Review poll results] Notice how the rubric helps us be specific about strengths and weaknesses."
+
+**FeedbackFruits Presentation (10 min):**
+> "Now let's hear from FeedbackFruits about how they approach educational feedback tools."
+>
+> [Hand off to FeedbackFruits presenter]
+
+**Fork Repository (2 min):**
+> "Great! Now fork this repository to your own account. You'll use your peers' summaries from Discussion 1 as test data for your agent."
 
 ---
 
@@ -98,7 +134,7 @@ Create a Mentimeter presentation with the following slides:
 > - Giving feedback
 > - Using a rubric
 >
-> Time to build an agent that does this! In GitHub Copilot Chat: click the + button → Instructions → Configure Instructions → + New Instruction file. Name it with your group name (e.g., group1-feedback-agent.md). Write rules for how your agent should give feedback."
+> Time to build an agent that does this! In GitHub Copilot Chat: click the + button → Instructions → Configure Instructions → + New Instruction file. Name it with your group number: group1-feedback-agent.md, group2-feedback-agent.md, etc. Write rules for how your agent should give feedback."
 
 **Design questions to pose:**
 - Should your agent score first or guide through questions?
@@ -133,7 +169,7 @@ Prepare team rotation (e.g., Team A tests Team B, Team B tests Team C, Team C te
 ### Setup:
 - Teams at stations around room
 - Laptops open to their agent + Copilot Chat
-- Voting tool ready (e.g., Mentimeter poll or Google Form)
+- Optional: Create GitHub Discussion poll for voting, or use show of hands
 
 **Gallery walk (15 min):**
 > "Visit every station. Submit your summary to their agent. Ask about their design choices."

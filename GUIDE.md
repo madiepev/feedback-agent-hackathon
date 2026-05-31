@@ -10,29 +10,33 @@
 - GitHub account
 - GitHub Copilot enabled (or [start free trial](https://github.com/features/copilot))
 
-**Note:** You'll fork the repository AFTER Phase 1 — this gives the facilitators time to add your summaries as test data!
+**Note:** You'll fork the repository AFTER Phase 1 — your peer summaries from Discussions will become your agent's test data!
 
 ---
 
 ## Phase 1: Orientation & Elicitation (~50 min)
 
-### Read & Write (10 min)
-1. Read [assets/article.md](assets/article.md) (Mars geology findings)
-2. Open Mentimeter (link from facilitator)
-3. Write a 50-100 word summary of the main scientific findings
+### Read & Write (15 min)
+1. Go to **Discussions** tab in this repository
+2. Open the pinned discussion: **"Phase 1: Share Your Summary"**
+3. Read [assets/article.md](assets/article.md) (Mars geology findings)
+4. Write a 50-100 word summary of the main scientific findings
+5. **Post your summary as a comment** in the discussion
 
-### Vote for Best Summary (2 min)
-- View anonymized summaries from the group
-- Vote for the one you think is strongest
+### Vote for Best Summary (5 min)
+- Refresh the discussion page
+- Read your peers' summaries
+- React with 👍 to the one you think is strongest
+- Facilitator will show which got the most votes
 
 ### Identify Quality (10 min)
-**Mentimeter Question 1:** Why did you vote for that summary? What made it good?
-- Submit 1-2 characteristics
-- Facilitator displays word cloud/responses
+**Group Discussion:** Why did those summaries get the most votes?
+- What made them good?
+- What specific features stood out (accuracy, clarity, evidence, etc.)?
 
-**Mentimeter Question 2:** What could other summaries improve to be better?
-- Submit 1-2 improvement areas
-- Facilitator displays responses
+**Group Discussion:** How could lower-voted summaries improve?
+- What's missing or unclear?
+- What would you change?
 
 ### Learn the Rubric (8 min)
 Facilitator introduces the **Universal Science Writing Rubric**:
@@ -40,21 +44,20 @@ Facilitator introduces the **Universal Science Writing Rubric**:
 - Shows how your intuitions align with research-based criteria
 - Open [assets/rubric.md](assets/rubric.md) for reference
 
-### Evaluate Example (10 min)
-- Review [assets/example-summary.md](assets/example-summary.md)
-- Use [templates/peer-rating-worksheet.md](templates/peer-rating-worksheet.md)
-- Score the example on each rubric dimension (1-4)
-- Discuss: How did using the rubric compare to your initial instincts?
+### Evaluate Example (5 min)
+1. Go back to **Discussions** tab
+2. Open: **"Phase 1: Evaluate the Example Summary Using the Rubric"**
+3. Read the example summary shown in the discussion
+4. **Vote on all 5 polls** (one per rubric dimension)
+5. Discuss: How did using the rubric compare to your initial instincts?
 
 ### FeedbackFruits Presentation (~10 min)
 Learn about FeedbackFruits' approach to educational feedback tools.
 
-**Meanwhile:** Facilitators add your Mentimeter responses to the repository as sample summaries.
-
-### Fork the Repository (5 min)
-Now that the repo includes real peer summaries:
+### Fork Repository (~2 min)
+Now that you've created summaries together in the Discussions:
 1. Click **Fork** at the top of this repository
-2. You now have sample data to test your agent with!
+2. You now have access to real peer summaries to test your agent with!
 
 **Key Insight:** You've now experienced what AI feedback agents need to do — recognize quality, explain why, and suggest improvements using clear criteria.
 
@@ -69,7 +72,7 @@ Now that the repo includes real peer summaries:
 2. Click **Instructions**
 3. Click **Configure Instructions**
 4. Click **+ New Instruction file**
-5. Name it with your group prefix (e.g., `group1-feedback-agent.md`)
+5. Name it with your group number (e.g., `group1-feedback-agent.md`, `group2-feedback-agent.md`)
 6. Write your agent's behavior rules
 
 **Key Decisions:**
@@ -98,10 +101,11 @@ Save your changes to GitHub (click "Commit changes" or use git)
 - Note: What works? What doesn't?
 
 ### Submit Feedback via GitHub Issue (15 min)
-1. Go to **Issues** tab in their repository
+1. Go to **Issues** tab in the main repository
 2. Click **New Issue**
-3. Use [templates/github-issue-template.md](templates/github-issue-template.md)
-4. Describe strengths, gaps, and suggestions
+3. Select **"Agent Feedback (Phase 3)"** template
+4. Choose your group and the group you're evaluating from dropdowns
+5. Describe strengths, gaps, and suggestions
 
 ---
 

@@ -1,6 +1,6 @@
 name: Agent Feedback (Phase 3)
-description: Feedback on another team's AI feedback agent
-title: "[Agent Feedback] Team [Your Team Name] → Team [Their Team Name]"
+description: Feedback on another group's AI feedback agent
+title: "[Agent Feedback] Group [Your Group] → Group [Their Group]"
 labels: ["phase-3", "cross-testing", "feedback"]
 body:
   - type: markdown
@@ -8,46 +8,258 @@ body:
       value: |
         ## Agent Testing Feedback
         
-        Use this template to provide structured feedback on another team's agent during **Phase 3: Cross-Testing**.
+        Use this template to provide structured feedback on another group's agent during **Phase 3: Cross-Testing**.
         
-  - type: input
-    id: your-team
+  - type: dropdown
+    id: your-group
     attributes:
-      label: Your Team Name
-      description: What team are you on?
-      placeholder: e.g., Team Rubric Rangers
+      label: Your Group Number
+      description: What group are you in?
+      options:
+        - Group 1
+        - Group 2
+        - Group 3
+        - Group 4
+        - Group 5
+        - Group 6
+        - Group 7
+        - Group 8
+        - Group 9
+        - Group 10
     validations:
       required: true
       
-  - type: input
-    id: their-team
+  - type: dropdown
+    id: their-group
     attributes:
-      label: Team Being Evaluated
+      label: Group Being Evaluated
       description: Whose agent did you test?
-      placeholder: e.g., Team Feedback Ninjas
+      options:
+        - Group 1
+        - Group 2
+        - Group 3
+        - Group 4
+        - Group 5
+        - Group 6
+        - Group 7
+        - Group 8
+        - Group 9
+        - Group 10
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        ## Part 1: Understanding the Feedback
+
+  - type: dropdown
+    id: understanding-problem
+    attributes:
+      label: Did you understand what problems the agent identified?
+      description: Could you clearly tell what the agent thought was wrong with your summary?
+      options:
+        - Yes, completely understood
+        - Mostly understood
+        - Partially understood
+        - Did not understand
+    validations:
+      required: true
+
+  - type: dropdown
+    id: understanding-solution
+    attributes:
+      label: Did you understand how to improve based on the agent's feedback?
+      description: Was it clear what changes you should make?
+      options:
+        - Yes, completely understood
+        - Mostly understood
+        - Partially understood
+        - Did not understand
     validations:
       required: true
 
   - type: textarea
-    id: what-went-well
+    id: understanding-explanation
     attributes:
-      label: ✅ What the Agent Did Well
-      description: List 2-3 specific strengths of this agent
+      label: Explain Your Understanding
+      description: What helped or hindered your understanding?
       placeholder: |
-        1. The agent gave very specific feedback, citing exact sentences
-        2. It used the rubric dimensions explicitly
-        3. The tone was encouraging but honest
+        Example: "The agent gave specific line numbers and examples, which helped me understand exactly what to fix."
     validations:
       required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        ## Part 2: Agreement with Feedback
+
+  - type: dropdown
+    id: agreement-problem
+    attributes:
+      label: Did you agree with the problems the agent identified?
+      description: Were the identified issues actually problems in your summary?
+      options:
+        - Yes, completely agreed
+        - Mostly agreed
+        - Partially agreed
+        - Did not agree
+    validations:
+      required: true
+
+  - type: dropdown
+    id: agreement-solution
+    attributes:
+      label: Did you agree with the agent's suggested improvements?
+      description: Would the suggestions actually improve your summary?
+      options:
+        - Yes, completely agreed
+        - Mostly agreed
+        - Partially agreed
+        - Did not agree
+    validations:
+      required: true
+
+  - type: textarea
+    id: agreement-explanation
+    attributes:
+      label: Explain Your Agreement (or Disagreement)
+      description: Why did you agree or disagree?
+      placeholder: |
+        Example: "I agreed because the agent correctly identified that my evidence section was weak, but I disagreed that adding more quotes would help — I need better analysis of the existing quotes."
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        ## Part 3: Feedback Features Present
+
+  - type: checkboxes
+    id: cognitive-features
+    attributes:
+      label: What cognitive features did the agent use?
+      description: Check all features you observed (based on Wu & Schunn, 2019)
+      options:
+        - label: Identification (clearly pointed out what was problematic)
+        - label: Explanation (explained WHY something was problematic)
+        - label: Suggestion (provided general advice on how to improve)
+        - label: Solution (gave specific, concrete changes to make)
+
+  - type: checkboxes
+    id: affective-features
+    attributes:
+      label: What affective features did the agent use?
+      description: Check all features you observed
+      options:
+        - label: Mitigating praise (included positive comments with criticism)
+        - label: Hedges (used tentative language like "maybe" or "possibly")
 
   - type: checkboxes
     id: feedback-type
     attributes:
-      label: 🎯 Type of Feedback Prioritized
-      description: What kind of feedback did the agent focus on? (Check all that apply)
+      label: What type of feedback did the agent provide?
+      description: Check all that apply
       options:
         - label: Corrective (direct corrections of errors)
         - label: Evaluative (scoring or judging quality)
+        - label: Descriptive (explaining what's present)
+        - label: Questioning (asking you to reflect)
+        - label: Suggestive (offering alternatives)
+
+  - type: dropdown
+    id: rubric-usage
+    attributes:
+      label: Did the Agent Use the Rubric?
+      description: How well did the agent reference the Universal Science Writing Rubric?
+      options:
+        - Yes, extensively
+        - Yes, somewhat
+        - Barely
+        - Not at all
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        ## Part 4: Implementation Intent
+
+  - type: dropdown
+    id: would-implement
+    attributes:
+      label: Would you implement this agent's feedback?
+      description: If you were revising your summary, would you actually use this feedback?
+      options:
+        - Yes, would implement all of it
+        - Yes, would implement most of it
+        - Would implement some of it
+        - Would implement little of it
+        - Would not implement any of it
+    validations:
+      required: true
+
+  - type: textarea
+    id: implementation-reasoning
+    attributes:
+      label: Explain Your Implementation Decision
+      description: What would make you more or less likely to act on this feedback?
+      placeholder: |
+        Example: "I would implement the specific suggestions about adding evidence because they were clear and actionable. I wouldn't implement the vague comments about 'improving flow' because I don't know what that means."
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        ## Part 5: Overall Assessment
+
+  - type: textarea
+    id: strengths
+    attributes:
+      label: What Made This Agent Effective (or Not)?
+      description: Summarize the key strengths and weaknesses
+      placeholder: |
+        Strengths:
+        - Gave concrete examples from my text
+        - Used rubric terminology
+        
+        Weaknesses:
+        - Too much praise, not enough actionable criticism
+        - Didn't prioritize what to fix first
+    validations:
+      required: true
+
+  - type: textarea
+    id: example-quote
+    attributes:
+      label: Concrete Example of Agent Feedback
+      description: Quote a specific piece of feedback and explain why it did or didn't work
+      placeholder: |
+        The agent said: "Your interpretation section (Dimension B) scores 2/4. You identified the main finding but didn't explain its significance. Try adding: 'This discovery matters because...'"
+        
+        This worked because: It identified the problem, explained WHY it was a problem, and gave a specific solution to implement.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: overall-rating
+    attributes:
+      label: Overall, how helpful was this agent?
+      description: Based on understanding, agreement, and implementation intent
+      options:
+        - "5 - Extremely helpful (would definitely use)"
+        - "4 - Very helpful (would likely use)"
+        - "3 - Moderately helpful (might use)"
+        - "2 - Slightly helpful (probably wouldn't use)"
+        - "1 - Not helpful (would not use)"
+    validations:
+      required: true
         - label: Descriptive (explaining what's present)
         - label: Questioning (asking students to reflect)
         - label: Suggestive (offering alternatives)

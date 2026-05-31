@@ -16,7 +16,7 @@ Design, test, and refine an AI-powered feedback agent for science writing. Your 
 
 ## What You'll Do (3 Hours)
 
-1. **Orientation & Elicitation** (~50 min) — Write summaries in Mentimeter, vote for best, identify quality criteria, learn the rubric, FeedbackFruits presentation, then fork repo
+1. **Orientation & Elicitation** (~50 min) — Write summaries in GitHub Discussions, vote for best, identify quality criteria, learn the rubric, evaluate example via polls, FeedbackFruits presentation, then fork repo
 2. **Agent Design** (~50 min) — Define your agent through instructions that GitHub Copilot can reference
 3. **Cross-Testing** (~25 min) — Test another team's agent
 4. **Iteration** (~30 min) — Improve based on feedback
@@ -31,7 +31,7 @@ Design, test, and refine an AI-powered feedback agent for science writing. Your 
 ### Quick Setup:
 1. Fork this repository
 2. In GitHub Copilot Chat: click **+** → **Instructions** → **Configure Instructions** → **+ New Instruction file**
-3. Create file in `.github/instructions/` with your group name prefix (e.g., `group1-feedback-agent.md`)
+3. Create file in `.github/instructions/` with your group number (e.g., `group1-feedback-agent.md`)
 4. Test with GitHub Copilot Chat
 5. Commit changes
 
@@ -41,11 +41,11 @@ Design, test, and refine an AI-powered feedback agent for science writing. Your 
 - **assets/rubric.md** — Universal Science Writing Rubric
 - **assets/article.md** — Mars article to summarize
 - **assets/example-summary.md** — Example for rubric practice
-- **templates/** — Worksheets for activities
 
-### Facilitator Materials Needed:
-- Mentimeter with 3 questions (summary submission, quality vote, improvement suggestions)
-- Link to share at start of event
+### Facilitator Setup Required:
+- Two GitHub Discussions created before event (see FACILITATOR-NOTES.md)
+- Discussion 1: "Share Your Summary" (pinned)
+- Discussion 2: "Evaluate the Example Summary" with 5 polls (pinned)
 
 ---
 
