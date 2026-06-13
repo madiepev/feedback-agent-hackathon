@@ -1,50 +1,35 @@
 name: Agent Feedback (Phase 3)
-description: Feedback on another group's AI feedback agent
-title: "[Agent Feedback] Group [Your Group] → Group [Their Group]"
-labels: ["phase-3", "cross-testing", "feedback"]
+description: Evaluate another group's AI feedback agent
+title: "[Feedback] Group [X] → Group [Y]"
+labels: ["phase-3", "cross-testing"]
 body:
   - type: markdown
     attributes:
       value: |
-        ## Agent Testing Feedback
+        ## Agent Feedback Form
         
-        Use this template to provide structured feedback on another group's agent during **Phase 3: Cross-Testing**.
+        Rate the agent on 5 criteria using a 5-point scale and provide evidence for each rating.
+        
+        **Rating Scale:**
+        - **5** = Excellent
+        - **4** = Good
+        - **3** = Adequate
+        - **2** = Needs Improvement
+        - **1** = Poor
         
   - type: dropdown
     id: your-group
     attributes:
-      label: Your Group Number
-      description: What group are you in?
-      options:
-        - Group 1
-        - Group 2
-        - Group 3
-        - Group 4
-        - Group 5
-        - Group 6
-        - Group 7
-        - Group 8
-        - Group 9
-        - Group 10
+      label: Your Group
+      options: [Group 1, Group 2, Group 3, Group 4, Group 5, Group 6, Group 7, Group 8, Group 9, Group 10]
     validations:
       required: true
       
   - type: dropdown
-    id: their-group
+    id: tested-group
     attributes:
-      label: Group Being Evaluated
-      description: Whose agent did you test?
-      options:
-        - Group 1
-        - Group 2
-        - Group 3
-        - Group 4
-        - Group 5
-        - Group 6
-        - Group 7
-        - Group 8
-        - Group 9
-        - Group 10
+      label: Agent You Tested
+      options: [Group 1, Group 2, Group 3, Group 4, Group 5, Group 6, Group 7, Group 8, Group 9, Group 10]
     validations:
       required: true
 
@@ -52,41 +37,28 @@ body:
     attributes:
       value: |
         ---
-        ## Part 1: Understanding the Feedback
+        ## Criterion 1: Understandability
+        *Could you comprehend what the agent was telling you?*
 
   - type: dropdown
-    id: understanding-problem
+    id: understandability-rating
     attributes:
-      label: Did you understand what problems the agent identified?
-      description: Could you clearly tell what the agent thought was wrong with your summary?
+      label: Rating
       options:
-        - Yes, completely understood
-        - Mostly understood
-        - Partially understood
-        - Did not understand
-    validations:
-      required: true
-
-  - type: dropdown
-    id: understanding-solution
-    attributes:
-      label: Did you understand how to improve based on the agent's feedback?
-      description: Was it clear what changes you should make?
-      options:
-        - Yes, completely understood
-        - Mostly understood
-        - Partially understood
-        - Did not understand
+        - "5 - Excellent"
+        - "4 - Good"
+        - "3 - Adequate"
+        - "2 - Needs Improvement"
+        - "1 - Poor"
     validations:
       required: true
 
   - type: textarea
-    id: understanding-explanation
+    id: understandability-evidence
     attributes:
-      label: Explain Your Understanding
-      description: What helped or hindered your understanding?
-      placeholder: |
-        Example: "The agent gave specific line numbers and examples, which helped me understand exactly what to fix."
+      label: Evidence
+      description: Provide a specific example or observation that supports your rating
+      placeholder: "Example: The agent clearly identified each issue and explained what needed to change, making it easy to understand exactly what was problematic."
     validations:
       required: true
 
@@ -94,41 +66,28 @@ body:
     attributes:
       value: |
         ---
-        ## Part 2: Agreement with Feedback
+        ## Criterion 2: Specificity
+        *Did the agent provide concrete examples vs. vague statements?*
 
   - type: dropdown
-    id: agreement-problem
+    id: specificity-rating
     attributes:
-      label: Did you agree with the problems the agent identified?
-      description: Were the identified issues actually problems in your summary?
+      label: Rating
       options:
-        - Yes, completely agreed
-        - Mostly agreed
-        - Partially agreed
-        - Did not agree
-    validations:
-      required: true
-
-  - type: dropdown
-    id: agreement-solution
-    attributes:
-      label: Did you agree with the agent's suggested improvements?
-      description: Would the suggestions actually improve your summary?
-      options:
-        - Yes, completely agreed
-        - Mostly agreed
-        - Partially agreed
-        - Did not agree
+        - "5 - Excellent"
+        - "4 - Good"
+        - "3 - Adequate"
+        - "2 - Needs Improvement"
+        - "1 - Poor"
     validations:
       required: true
 
   - type: textarea
-    id: agreement-explanation
+    id: specificity-evidence
     attributes:
-      label: Explain Your Agreement (or Disagreement)
-      description: Why did you agree or disagree?
-      placeholder: |
-        Example: "I agreed because the agent correctly identified that my evidence section was weak, but I disagreed that adding more quotes would help — I need better analysis of the existing quotes."
+      label: Evidence
+      description: Provide a specific example or observation that supports your rating
+      placeholder: 'Example: The agent quoted my exact text "multiple minerals indicate" and explained specifically what was missing from that statement.'
     validations:
       required: true
 
@@ -136,50 +95,28 @@ body:
     attributes:
       value: |
         ---
-        ## Part 3: Feedback Features Present
-
-  - type: checkboxes
-    id: cognitive-features
-    attributes:
-      label: What cognitive features did the agent use?
-      description: Check all features you observed (based on Wu & Schunn, 2019)
-      options:
-        - label: Identification (clearly pointed out what was problematic)
-        - label: Explanation (explained WHY something was problematic)
-        - label: Suggestion (provided general advice on how to improve)
-        - label: Solution (gave specific, concrete changes to make)
-
-  - type: checkboxes
-    id: affective-features
-    attributes:
-      label: What affective features did the agent use?
-      description: Check all features you observed
-      options:
-        - label: Mitigating praise (included positive comments with criticism)
-        - label: Hedges (used tentative language like "maybe" or "possibly")
-
-  - type: checkboxes
-    id: feedback-type
-    attributes:
-      label: What type of feedback did the agent provide?
-      description: Check all that apply
-      options:
-        - label: Corrective (direct corrections of errors)
-        - label: Evaluative (scoring or judging quality)
-        - label: Descriptive (explaining what's present)
-        - label: Questioning (asking you to reflect)
-        - label: Suggestive (offering alternatives)
+        ## Criterion 3: Validity
+        *Was the feedback accurate and aligned with the rubric?*
 
   - type: dropdown
-    id: rubric-usage
+    id: validity-rating
     attributes:
-      label: Did the Agent Use the Rubric?
-      description: How well did the agent reference the Universal Science Writing Rubric?
+      label: Rating
       options:
-        - Yes, extensively
-        - Yes, somewhat
-        - Barely
-        - Not at all
+        - "5 - Excellent"
+        - "4 - Good"
+        - "3 - Adequate"
+        - "2 - Needs Improvement"
+        - "1 - Poor"
+    validations:
+      required: true
+
+  - type: textarea
+    id: validity-evidence
+    attributes:
+      label: Evidence
+      description: Provide a specific example or observation that supports your rating
+      placeholder: "Example: The agent correctly identified that my Dimension 2 (Interpretation) was missing significance explanation, which aligned with the rubric criteria."
     validations:
       required: true
 
@@ -187,29 +124,28 @@ body:
     attributes:
       value: |
         ---
-        ## Part 4: Implementation Intent
+        ## Criterion 4: Actionability
+        *Could you actually use this feedback to improve?*
 
   - type: dropdown
-    id: would-implement
+    id: actionability-rating
     attributes:
-      label: Would you implement this agent's feedback?
-      description: If you were revising your summary, would you actually use this feedback?
+      label: Rating
       options:
-        - Yes, would implement all of it
-        - Yes, would implement most of it
-        - Would implement some of it
-        - Would implement little of it
-        - Would not implement any of it
+        - "5 - Excellent"
+        - "4 - Good"
+        - "3 - Adequate"
+        - "2 - Needs Improvement"
+        - "1 - Poor"
     validations:
       required: true
 
   - type: textarea
-    id: implementation-reasoning
+    id: actionability-evidence
     attributes:
-      label: Explain Your Implementation Decision
-      description: What would make you more or less likely to act on this feedback?
-      placeholder: |
-        Example: "I would implement the specific suggestions about adding evidence because they were clear and actionable. I wouldn't implement the vague comments about 'improving flow' because I don't know what that means."
+      label: Evidence
+      description: Provide a specific example or observation that supports your rating
+      placeholder: 'Example: The agent suggested adding "This discovery matters because..." which gave me a concrete template to follow.'
     validations:
       required: true
 
@@ -217,47 +153,64 @@ body:
     attributes:
       value: |
         ---
-        ## Part 5: Overall Assessment
+        ## Criterion 5: Affective Quality
+        *Did the feedback motivate you to improve?*
 
-  - type: textarea
-    id: strengths
+  - type: dropdown
+    id: affective-rating
     attributes:
-      label: What Made This Agent Effective (or Not)?
-      description: Summarize the key strengths and weaknesses
-      placeholder: |
-        Strengths:
-        - Gave concrete examples from my text
-        - Used rubric terminology
-        
-        Weaknesses:
-        - Too much praise, not enough actionable criticism
-        - Didn't prioritize what to fix first
+      label: Rating
+      options:
+        - "5 - Excellent"
+        - "4 - Good"
+        - "3 - Adequate"
+        - "2 - Needs Improvement"
+        - "1 - Poor"
     validations:
       required: true
 
   - type: textarea
-    id: example-quote
+    id: affective-evidence
     attributes:
-      label: Concrete Example of Agent Feedback
-      description: Quote a specific piece of feedback and explain why it did or didn't work
-      placeholder: |
-        The agent said: "Your interpretation section (Dimension B) scores 2/4. You identified the main finding but didn't explain its significance. Try adding: 'This discovery matters because...'"
-        
-        This worked because: It identified the problem, explained WHY it was a problem, and gave a specific solution to implement.
+      label: Evidence
+      description: Provide a specific example or observation that supports your rating
+      placeholder: "Example: The agent started with positive observations about my content accuracy before suggesting improvements, which felt encouraging rather than discouraging."
     validations:
       required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        ## Overall Assessment
 
   - type: dropdown
     id: overall-rating
     attributes:
-      label: Overall, how helpful was this agent?
-      description: Based on understanding, agreement, and implementation intent
+      label: Overall Rating
+      description: Based on all criteria, how would you rate this agent overall?
       options:
-        - "5 - Extremely helpful (would definitely use)"
-        - "4 - Very helpful (would likely use)"
-        - "3 - Moderately helpful (might use)"
-        - "2 - Slightly helpful (probably wouldn't use)"
-        - "1 - Not helpful (would not use)"
+        - "5 - Excellent"
+        - "4 - Good"
+        - "3 - Adequate"
+        - "2 - Needs Improvement"
+        - "1 - Poor"
+    validations:
+      required: true
+
+  - type: textarea
+    id: overall-feedback
+    attributes:
+      label: Overall Feedback
+      description: Summarize your experience with this agent. What worked well? What should be improved?
+      placeholder: |
+        What worked well:
+        - Specific quotes from my text helped me understand exactly what to improve
+        - Organized feedback by rubric dimensions was easy to follow
+        
+        What should be improved:
+        - Could prioritize which issues to fix first
+        - More concrete revision examples would help
     validations:
       required: true
 
@@ -265,95 +218,9 @@ body:
     attributes:
       value: |
         ---
-        ## Part 6: Rubric Integration
-
-  - type: checkboxes
-    id: rubric-integration
-    attributes:
-      label: How Was the Rubric Integrated?
-      description: Check all that apply
-      options:
-        - label: Provided scores for each dimension
-        - label: Referenced specific rubric criteria
-        - label: Used rubric language/terminology
-        - label: Organized feedback by rubric dimensions
-        - label: Asked questions related to rubric criteria
-        - label: Compared to rubric examples
-        - label: Didn't meaningfully use the rubric
-        - label: Other (explain below)
-
-  - type: textarea
-    id: rubric-observations
-    attributes:
-      label: Specific Observations About Rubric Use
-      description: Give concrete examples of how the agent did or didn't use the rubric
-      placeholder: |
-        The agent explicitly said "Looking at Dimension C (Scientific Content)..." and then referenced the Mastery criteria from the rubric.
-    validations:
-      required: true
-
-  - type: textarea
-    id: what-was-missing
-    attributes:
-      label: ❌ What Was Missing or Unhelpful
-      description: What could make this agent more effective?
-      placeholder: |
-        Missing elements:
-        - Didn't provide concrete examples
-        - No suggestions for how to revise
         
-        Unhelpful aspects:
-        - Feedback was too vague
-        - Didn't prioritize what to fix first
-    validations:
-      required: true
-
-  - type: textarea
-    id: suggestions
-    attributes:
-      label: 💡 Suggestions for Improvement
-      description: If you were on this team, what would you change? List 1-3 priorities.
-      placeholder: |
-        Priority 1: Add specific examples when giving feedback
-        Priority 2: Reference rubric dimensions explicitly
-        Priority 3: Provide one concrete revision suggestion
-    validations:
-      required: true
-
-  - type: dropdown
-    id: would-use-again
-    attributes:
-      label: 🎓 Would You Use This Agent Again?
-      options:
-        - Yes, definitely
-        - Yes, with some changes
-        - Maybe
-        - Probably not
-        - No
-    validations:
-      required: true
-
-  - type: textarea
-    id: why-would-use
-    attributes:
-      label: Why or Why Not?
-      description: Explain your answer to the previous question
-      placeholder: I would use it because the feedback was actionable and helped me see exactly what to improve...
-    validations:
-      required: true
-
-  - type: textarea
-    id: additional-comments
-    attributes:
-      label: Additional Comments
-      description: Any other observations, questions, or compliments?
-      placeholder: Really creative approach! I especially liked...
-
-  - type: markdown
-    attributes:
-      value: |
-        ---
+        **Thank you!** 🚀 Your feedback helps teams iterate in Phase 4.
         
-        **Thank you for providing feedback!** 🚀
-        
-        Your insights will help the team improve their agent during Phase 5 (Iteration).
+        **References:**
+        - Wu, Y., & Schunn, C. D. (2019). Features of feedback from peer assessors. *Learning and Instruction*.
+        - Hattie, J., & Timperley, H. (2007). The power of feedback. *Review of Educational Research*.

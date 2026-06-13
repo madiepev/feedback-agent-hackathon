@@ -7,7 +7,7 @@
 ## Before You Start
 
 ### You'll Need:
-- GitHub account
+- [GitHub account](https://github.com/signup) (create one if you don't have it)
 - GitHub Copilot enabled (or [start free trial](https://github.com/features/copilot))
 
 **Note:** You'll fork the repository AFTER Phase 1 — your peer summaries from Discussions will become your agent's test data!
@@ -122,22 +122,19 @@ Save your changes to GitHub (click "Commit changes" or use git)
 - Test again with Copilot Chat
 
 ### Commit v2 (5 min)
-Save your improved version
-
 ---
 
-## Phase 5: Showcase & Vote (~25 min)
+## Phase 5: Community Testing & Reflection (~25 min)
 
-### Gallery Walk (15 min)
-- Set up at your station
-- Let others test your agent
-- Try other teams' agents on your summary
+### Open Testing (15 min)
+- Test multiple teams' agents freely
+- Try agents on your summary from Phase 1
+- Note what works well and what makes certain approaches effective
 
-### Vote (10 min)
-- Vote for the most effective agent (not your own)
-- Consider: usefulness, specificity, rubric use, tone
-
-**Winner announced!**
+### Share Reflections (10 min)
+- Share your favorite agent in GitHub Discussion
+- Explain why it was effective with specific examples
+- Reflect together on what made certain approaches stand out
 
 ---
 
