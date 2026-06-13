@@ -260,31 +260,12 @@ body:
         - "1 - Not helpful (would not use)"
     validations:
       required: true
-        - label: Descriptive (explaining what's present)
-        - label: Questioning (asking students to reflect)
-        - label: Suggestive (offering alternatives)
-        - label: Explanatory (teaching concepts)
-        - label: Other (please explain below)
 
-  - type: textarea
-    id: feedback-type-explanation
+  - type: markdown
     attributes:
-      label: Explanation of Feedback Type
-      description: Elaborate on the types of feedback you checked above
-      placeholder: The agent mainly asked questions rather than giving direct answers, which made me think more deeply...
-
-  - type: dropdown
-    id: rubric-usage
-    attributes:
-      label: 📊 Did the Agent Use the Rubric?
-      description: How well did the agent integrate the Universal Science Writing Rubric?
-      options:
-        - Yes, extensively
-        - Yes, somewhat
-        - Barely
-        - Not at all
-    validations:
-      required: true
+      value: |
+        ---
+        ## Part 6: Rubric Integration
 
   - type: checkboxes
     id: rubric-integration
@@ -324,18 +305,6 @@ body:
         Unhelpful aspects:
         - Feedback was too vague
         - Didn't prioritize what to fix first
-    validations:
-      required: true
-
-  - type: textarea
-    id: example-quote
-    attributes:
-      label: Concrete Example
-      description: Quote a specific piece of feedback from the agent and explain why it did or didn't work
-      placeholder: |
-        The agent said: "Your summary needs more detail."
-        
-        This didn't work because it wasn't specific about WHAT detail or WHERE to add it.
     validations:
       required: true
 
