@@ -63,6 +63,16 @@ Facilitator introduces the **Universal Science Writing Rubric**:
 
 ---
 
+## Step 5: Evaluate Example Summary (5 min)
+
+1. Go back to the **Discussions** tab
+2. Open: **"Phase 1: Evaluate the Example Summary Using the Rubric"**
+3. Read the example summary shown in the discussion
+4. **Vote on all 5 polls** (one per rubric dimension)
+5. Discuss: How did using the rubric compare to your initial instincts?
+
+---
+
 ## Step 6: Fork Repository (~7 min)
 
 Now that you've created summaries together in the Discussions:
