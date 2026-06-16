@@ -48,30 +48,22 @@ Welcome! Before building feedback agents, let's create test data together.
 - Post by [TIME] — we'll count votes together!
 ```
 
-**Discussion 2: Evaluate the Example Summary**
-- **Title:** Phase 1: Evaluate the Example Summary Using the Rubric
-- **Category:** Polls
+**Discussion 2: Which Agent Was Most Effective?**
+- **Title:** Which agent was most effective?
+- **Category:** General
 - **Body:**
 ```markdown
-Now that you've learned the Universal Science Writing Rubric, let's practice!
+After community testing, reply with:
 
-Read this example summary (from [assets/example-summary.md](../blob/main/assets/example-summary.md)):
+1. Which team's agent you found most effective
+2. Why it was effective, with specific examples from the feedback you received
 
-> NASA's Perseverance rover discovered the "Bright Angel" rock formation in Jezero Crater, revealing diverse redox chemistry through Raman and fluorescence spectroscopy. Multiple minerals indicate dynamic wet-dry cycles during Mars' early history. Organic matter detection suggests complex prebiotic chemistry, though biological origin remains unconfirmed. These findings constrain models of Mars' ancient climate and aqueous geochemistry, with implications for understanding planetary habitability beyond Earth.
-
-**Vote on each dimension below (1=Absent, 2=Developing, 3=Proficient, 4=Mastery):**
+Please do not vote for your own team's agent.
 ```
-
-- **Poll 1:** Dimension A - Content Accuracy (Options: 1-Absent, 2-Developing, 3-Proficient, 4-Mastery)
-- **Poll 2:** Dimension B - Interpretation (Options: 1-Absent, 2-Developing, 3-Proficient, 4-Mastery)
-- **Poll 3:** Dimension C - Audience Targeting (Options: 1-Absent, 2-Developing, 3-Proficient, 4-Mastery)
-- **Poll 4:** Dimension D - Organization (Options: 1-Absent, 2-Developing, 3-Proficient, 4-Mastery)
-- **Poll 5:** Dimension E - Writing Quality (Options: 1-Absent, 2-Developing, 3-Proficient, 4-Mastery)
 
 ### Materials Checklist
 - [ ] Discussion 1 (Share Your Summary) created and pinned
-- [ ] Discussion 2 (Evaluate Example) created with 5 polls
-- [ ] Discussion 3 (Which agent was most effective?) created for Phase 5
+- [ ] Discussion 2 (Which agent was most effective?) created for Phase 5
 - [ ] Consent forms printed (CONSENT.md)
 - [ ] Participant ID stickers or cards (P001, P002, etc.)
 - [ ] Projector/screen for displaying discussion responses live
@@ -123,8 +115,7 @@ Read this example summary (from [assets/example-summary.md](../blob/main/assets/
 - **18:30-18:35** (5 min) — Share reactions to summaries
 - **18:35-18:45** (10 min) — Group discussion: What makes good feedback?
 - **18:45-18:53** (8 min) — Introduce the Universal Science Writing Rubric
-- **18:53-18:58** (5 min) — Evaluate example summary using polls
-- **18:58-19:05** (7 min) — Fork repository & setup
+- **18:53-19:05** (12 min) — Fork repository & setup
 
 ### Facilitator Script:
 
@@ -156,14 +147,7 @@ Read this example summary (from [assets/example-summary.md](../blob/main/assets/
 >
 > "This rubric is your agent's foundation. Your job is to decide HOW it should use these criteria to help students."
 
-**Example Evaluation (18:53-18:58):**
-> "Navigate to the second pinned discussion: 'Evaluate the Example Summary'. You'll see an example summary and 5 polls—one per rubric dimension. Rate each dimension using the poll. How does using the rubric compare to your gut instinct?"
->
-> [Allow 3-4 minutes for rating]
->
-> "Let's see the results. [Review poll results] Notice how the rubric helps us be specific about strengths and weaknesses."
-
-**Fork Repository (18:58-19:05):**
+**Fork Repository (18:53-19:05):**
 > "Great! Now fork this repository to your own account. You'll use your peers' summaries from Discussion 1 as test data for your agent. Take a few minutes to get set up."
 
 ---

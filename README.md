@@ -27,7 +27,7 @@ Design, test, and refine an AI-powered feedback agent for science writing. Your 
 ### **18:15–19:05** | [Phase 1: Orientation & Elicitation](phase1-orientation.md)
 **Experience the task before building the AI**
 
-Write summaries, share reactions, learn the rubric, practice evaluation, then fork the repo.
+Write summaries, share reactions, learn the rubric, then fork the repo.
 
 **[→ Start Phase 1](phase1-orientation.md)**
 
