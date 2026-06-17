@@ -1,0 +1,62 @@
+name: Claude Feedback Reusable
+
+on:
+  workflow_call:
+    inputs:
+      instructions_path:
+        description: Group instruction file under .github/instructions.
+        required: true
+        type: string
+      summary:
+        description: Student summary to receive feedback on.
+        required: true
+        type: string
+      model:
+        description: Anthropic model to use.
+        required: false
+        type: string
+        default: claude-sonnet-4-6
+      max_tokens:
+        description: Maximum Claude output tokens.
+        required: false
+        type: number
+        default: 1200
+    secrets:
+      ANTHROPIC_API_KEY:
+        required: true
+
+permissions:
+  contents: read
+
+jobs:
+  feedback:
+    name: Generate feedback
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout trusted workshop repository
+        uses: actions/checkout@v4
+
+      - name: Generate Claude feedback
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          INSTRUCTIONS_PATH: ${{ inputs.instructions_path }}
+          STUDENT_SUMMARY: ${{ inputs.summary }}
+          CLAUDE_MODEL: ${{ inputs.model }}
+          MAX_TOKENS: ${{ inputs.max_tokens }}
+        run: |
+          python3 scripts/claude_feedback.py \
+            --instructions-path "$INSTRUCTIONS_PATH" \
+            --summary "$STUDENT_SUMMARY" \
+            --model "$CLAUDE_MODEL" \
+            --max-tokens "$MAX_TOKENS" \
+            --output claude-feedback.md
+
+      - name: Print feedback
+        run: cat claude-feedback.md
+
+      - name: Upload feedback artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: claude-feedback
+          path: claude-feedback.md
+          if-no-files-found: error

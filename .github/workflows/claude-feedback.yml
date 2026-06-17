@@ -1,0 +1,36 @@
+name: Claude Feedback
+
+on:
+  workflow_dispatch:
+    inputs:
+      instructions_path:
+        description: Group instruction file to use.
+        required: true
+        type: string
+        default: .github/instructions/group1-feedback-agent.instructions.md
+      summary:
+        description: Paste the student's 50-100 word summary.
+        required: true
+        type: string
+      model:
+        description: Anthropic model to use.
+        required: true
+        type: string
+        default: claude-sonnet-4-6
+      max_tokens:
+        description: Maximum Claude output tokens.
+        required: true
+        type: number
+        default: 1200
+permissions:
+  contents: read
+
+jobs:
+  feedback:
+    uses: ./.github/workflows/claude-feedback-reusable.yml
+    with:
+      instructions_path: ${{ inputs.instructions_path }}
+      summary: ${{ inputs.summary }}
+      model: ${{ inputs.model }}
+      max_tokens: ${{ inputs.max_tokens }}
+    secrets: inherit

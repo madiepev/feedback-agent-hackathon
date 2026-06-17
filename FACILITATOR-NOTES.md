@@ -231,6 +231,22 @@ Prepare team rotation beforehand (e.g., Team 1 tests Team 2, Team 2 tests Team 3
 
 ---
 
+## Claude Feedback Fallback
+
+If Copilot access or rate limits block a team during the workshop, use the **Claude Feedback** manual GitHub Actions workflow from the trusted workshop repository.
+
+Setup:
+- Add `ANTHROPIC_API_KEY` as a repository or organization Actions secret.
+- Keep the workflow manual. Do not expose this secret to fork pull-request workflows.
+- Ask teams to name instruction files like `.github/instructions/group1-feedback-agent.instructions.md`.
+
+Running the fallback:
+- Open **Actions → Claude Feedback → Run workflow**.
+- Enter the group instruction path, paste the student's summary, and leave the default model/max token settings unless you need to control spend.
+- Read the generated feedback in the job summary or download the `claude-feedback` Markdown artifact.
+
+This fallback uses Anthropic quota and billing, not GitHub Copilot quota. Student summaries and feedback are visible to users who can view the workflow run logs and artifacts.
+
 ## Post-Event Tasks
 
 **Immediately After:**
