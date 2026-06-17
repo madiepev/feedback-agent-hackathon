@@ -14,6 +14,19 @@ Design, test, and refine an AI-powered feedback agent for science writing. Your 
 
 ---
 
+## Before You Begin
+
+**First time with GitHub?** You'll need a [GitHub account](https://github.com/signup) to participate.
+
+**Don't have VS Code and GitHub Copilot yet?** No problem! You'll set these up during Phase 1 (Step 6) using our **[Setup Guide](SETUP.md)**.
+
+**Want to prepare in advance?** Follow the **[Setup Guide](SETUP.md)** to install:
+- VS Code
+- GitHub Copilot extension (free trial available)
+- Git
+
+---
+
 ## Agenda (3 Hours)
 
 ### **18:00–18:15** | Welcome & Introduction
@@ -71,6 +84,9 @@ Test agents freely, share your favorite in GitHub Discussion with explanation, a
 
 ## Quick Reference
 
+### Setup & Preparation:
+- **[SETUP.md](SETUP.md)** — Install VS Code, Git, and GitHub Copilot
+
 ### Key Files:
 - **[phase1-orientation.md](phase1-orientation.md)** through **[phase5-showcase.md](phase5-showcase.md)** — Step-by-step guides
 - **[assets/rubric.md](assets/rubric.md)** — Universal Science Writing Rubric
@@ -90,7 +106,8 @@ See [CONSENT.md](CONSENT.md) for details. Participation is voluntary.
 
 ## Need Help?
 
+- **Setup Issues:** See [SETUP.md](SETUP.md) troubleshooting section
 - **Event Questions:** Ask a facilitator
-- **Technical Issues:** No git knowledge needed — use GitHub web interface
+- **Technical Issues During Event:** Ask a facilitator
 - **Research Questions:** See [CONSENT.md](CONSENT.md)
 - **Current Phase:** Follow the phase guide links above

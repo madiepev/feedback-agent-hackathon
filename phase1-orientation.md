@@ -1,4 +1,4 @@
-# Phase 1: Orientation & Elicitation
+# Phase 1: Orientation
 
 **Duration:** ~50 minutes  
 **Time:** 18:15-19:05  
@@ -8,9 +8,7 @@
 
 ## Before You Start
 
-### Prerequisites:
-- [GitHub account](https://github.com/signup) (create one if you don't have it)
-- GitHub Copilot enabled (or [start free trial](https://github.com/features/copilot))
+You'll need a **[GitHub account](https://github.com/signup)** to participate. Create one now if you don't have it yet.
 
 ---
 
@@ -63,12 +61,46 @@ Facilitator introduces the **Universal Science Writing Rubric**:
 
 ---
 
-## Step 6: Fork Repository (~7 min)
+## Step 6: Fork & Setup Repository (~12 min)
 
-Now that you've created summaries together in the Discussions:
+Now you'll fork the repository and set up your local environment to build your AI agent.
+
+### Part 1: Fork the Repository (2 min)
 
 1. Click **Fork** at the top of this repository
-2. You now have access to real peer summaries to test your agent with!
+2. Select your GitHub account as the destination
+3. Click **Create fork**
+4. You now have your own copy!
+
+### Part 2: Set Up Your Tools (10 min)
+
+To build and test your AI agent in Phase 2, you'll need:
+
+**Required Tools:**
+- ✅ **VS Code** — Code editor
+- ✅ **GitHub Copilot** — AI assistant (free trial available)
+- ✅ **Git** — Version control (to clone your repository)
+
+**Haven't installed these yet?** Follow the **[Setup Guide](SETUP.md)** now:
+
+📋 **[Complete Setup Instructions →](SETUP.md)**
+
+The setup guide includes:
+- Installing VS Code (Windows/Mac/Linux)
+- Installing Git
+- Installing GitHub Copilot extensions
+- Signing into GitHub in VS Code
+- Cloning your forked repository
+- Testing that everything works
+
+**Already set up?** Clone your forked repository:
+1. Open VS Code
+2. Press `Ctrl+Shift+P` (Windows/Linux) or `Cmd+Shift+P` (Mac)
+3. Type **"Git: Clone"** and select it
+4. Paste your fork's URL: `https://github.com/YOUR-USERNAME/feedback-agent-hackathon`
+5. Choose a folder and click **Open**
+
+**Alternative:** If you can't install VS Code, you can use the **GitHub web interface** to create your agent files.
 
 ---
 

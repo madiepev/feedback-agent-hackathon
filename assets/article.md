@@ -1,3 +1,5 @@
+← [Back to Phase 1: Orientation](../phase1-orientation.md)
+
 # Scientific Article: Redox-driven Mineral and Organic Associations in Jezero Crater, Mars
 
 ---
@@ -80,3 +82,7 @@ Jezero Crater is an ancient lake bed on Mars that contains a well-preserved rive
 ---
 
 *Note: The full article is available via the DOI link above. For this hackathon, focus on understanding the abstract and introduction to complete your summary.*
+
+---
+
+← [Back to Phase 1: Orientation](../phase1-orientation.md)

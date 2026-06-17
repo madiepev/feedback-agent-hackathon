@@ -24,7 +24,25 @@
 
 ## Pre-Event Setup (Complete Before 18:00)
 
-### GitHub Discussions Preparation
+### 1-2 Days Before Event: Email Participants (Optional)
+
+**Optional:** Send participants the **[SETUP.md](SETUP.md)** link to set up in advance. However, Phase 1 Step 6 includes dedicated time (12 min) for setup, so this is not required.
+
+> **Subject:** Get Ready for "Can AI Give Good Feedback?" Hackathon
+>
+> Hi everyone,
+>
+> Thanks for registering for our hackathon on June 17!
+>
+> You'll need a **GitHub account** to participate. If you don't have one, please create one at https://github.com/signup before arriving.
+>
+> **Optional preparation:** To save time during the event, you can install VS Code, Git, and GitHub Copilot in advance using our [Setup Guide](https://github.com/madiepev/feedback-agent-hackathon/blob/main/SETUP.md). If you don't, we have dedicated setup time built into Phase 1 (Step 6).
+>
+> See you Tuesday at 18:00!
+>
+> Mary-Jo & Bas
+
+### Day of Event: GitHub Discussions Preparation
 
 Create two GitHub Discussions in your repository before the event:
 
@@ -67,8 +85,8 @@ Please do not vote for your own team's agent.
 - [ ] Consent forms printed (CONSENT.md)
 - [ ] Participant ID stickers or cards (P001, P002, etc.)
 - [ ] Projector/screen for displaying discussion responses live
-- [ ] GitHub Copilot access verified for all participants
-- [ ] Team assignments prepared (3-4 people per team)
+- [ ] (Optional) Send SETUP.md link to participants 1-2 days before event
+- [ ] Team assignments prepared (6 teams of 3 people for 18 participants)
 - [ ] Cross-testing assignments ready (which team tests which)
 
 ---
@@ -79,8 +97,11 @@ Please do not vote for your own team's agent.
 - Participants arrive
 - Distribute consent forms (CONSENT.md)
 - Assign participant IDs to those who consent
-- Help with GitHub account setup if needed
-- Form teams (3-4 people per team)
+- **Quick check:** Does everyone have a GitHub account?
+  - If not, help them create one at github.com/signup
+- Form teams (6 teams of 3 people)
+
+**Note:** VS Code/Git/Copilot setup happens in Phase 1 Step 6 (12 min allocated)
 
 ---
 
@@ -147,8 +168,23 @@ Please do not vote for your own team's agent.
 >
 > "This rubric is your agent's foundation. Your job is to decide HOW it should use these criteria to help students."
 
-**Fork Repository (18:53-19:05):**
-> "Great! Now fork this repository to your own account. You'll use your peers' summaries from Discussion 1 as test data for your agent. Take a few minutes to get set up."
+**Fork & Setup Repository (18:53-19:05):**
+> "Great! Now it's time to set up your development environment. You'll fork this repository and install the tools you need to build your AI agent.
+>
+> **Step 1:** Fork this repository to your own GitHub account - click the Fork button at the top.
+>
+> **Step 2:** Follow the setup guide to install VS Code, Git, and GitHub Copilot if you haven't already. The link is in phase1-orientation.md Step 6."
+
+**Facilitator Actions During This Time:**
+- Circulate and help with setup issues
+- Direct participants to [SETUP.md](SETUP.md) for detailed instructions
+- Help with common issues:
+  - Installing VS Code/Git if not already installed
+  - Installing GitHub Copilot extension in VS Code
+  - Signing into GitHub in VS Code
+  - Cloning their forked repository
+- For those who can't get VS Code working: explain they can create agent files via GitHub web but won't test until Phase 3
+- **Check at 19:00:** Is everyone ready to start Phase 2? Extend by 5 min if needed.
 
 ---
 
