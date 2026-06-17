@@ -1,6 +1,6 @@
 name: Agent Feedback (Phase 3)
 description: Evaluate another group's AI feedback agent
-title: "[Feedback] Group [X] → Group [Y]"
+title: "[Feedback] Agent: [NAME]"
 labels: ["phase-3", "cross-testing"]
 body:
   - type: markdown
@@ -17,19 +17,12 @@ body:
         - **2** = Needs Improvement
         - **1** = Poor
         
-  - type: dropdown
-    id: your-group
+  - type: input
+    id: agent-name
     attributes:
-      label: Your Group
-      options: [Group 1, Group 2, Group 3, Group 4, Group 5, Group 6, Group 7, Group 8, Group 9, Group 10]
-    validations:
-      required: true
-      
-  - type: dropdown
-    id: tested-group
-    attributes:
-      label: Agent You Tested
-      options: [Group 1, Group 2, Group 3, Group 4, Group 5, Group 6, Group 7, Group 8, Group 9, Group 10]
+      label: Agent Name
+      description: Enter the name of the feedback agent you tested
+      placeholder: "e.g., Science Writing Coach, Feedback Master 3000"
     validations:
       required: true
 
