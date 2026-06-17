@@ -1,0 +1,1 @@
+The Perseverance rover found rocks with organic carbon-bearing mudstones and minerals such as iron phosphate and sulfide minerals, likely vivianite and greigite. The combination of these can occur in the rock, with a reaction similar to that found on Earth. This finding is important because it can determine what created these minerals and organic compounds.
