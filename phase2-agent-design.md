@@ -52,7 +52,7 @@ Before coding, decide on your agent's approach:
 3. Click **Instructions**
 4. Click **Configure Instructions**
 5. Click **+ New Instruction file**
-6. Name it: `.github/instructions/group[X]-feedback-agent.md` (replace [X] with your group number)
+6. Name it: `.github/instructions/group[X]-feedback-agent.instructions.md` (replace [X] with your group number)
 
 ### Write Your Agent Instructions
 

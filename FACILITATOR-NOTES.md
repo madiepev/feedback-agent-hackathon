@@ -134,7 +134,7 @@
 **Kickoff (19:05):**
 > "You've now experienced writing, identifying quality, giving feedback, and using a rubric. Time to build an agent that does this!
 >
-> In GitHub Copilot Chat: click the + button → Instructions → Configure Instructions → + New Instruction file. Name it with your group number: group1-feedback-agent.md, group2-feedback-agent.md, etc.
+> In GitHub Copilot Chat: click the + button → Instructions → Configure Instructions → + New Instruction file. Name it with your group number: group1-feedback-agent.instructions.md, group2-feedback-agent.instructions.md, etc.
 >
 > Key design questions to discuss as a team:
 > - Should your agent score first or guide through questions?
