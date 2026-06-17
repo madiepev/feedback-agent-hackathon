@@ -97,3 +97,15 @@ You can ask questions at any time by contacting:
 📧 m.diepeveen@vu.nl
 
 **Institution:** Vrije Universiteit Amsterdam, Faculty of Science
+
+---
+
+## 10. Providing Consent
+
+**By providing your GitHub handle, you provide consent for your data to be used in this research study as described above.**
+
+**If you do not provide your GitHub handle, you do not provide consent** and your data will not be included in the research study. You can still fully participate in the hackathon event.
+
+---
+
+**[➡️ Proceed to Consent Form](https://vuamsterdam.eu.qualtrics.com/jfe/form/SV_2nrxnZzy80egY1o)**
