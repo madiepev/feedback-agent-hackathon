@@ -10,7 +10,7 @@ This folder contains agent instruction files created during the hackathon.
 3. Click **Configure Instructions**
 4. Click **+ New Instruction file**
 5. Choose `.github/instructions` (default)
-6. Name with your group number: `group1-feedback-agent.md`, `group2-feedback-agent.md`, etc.
+6. Name with your group number: `group1-feedback-agent.instructions.md`, `group2-feedback-agent.instructions.md`, etc.
 
 ## What to Include
 
